@@ -1,0 +1,20 @@
+{
+  "name": "oana",
+  "version": "1.0.0",
+  "description": "Oana Gurzau Personal Page",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "devserver": "live-server",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "npm-run-all": "^4.1.3"
+  }
+}

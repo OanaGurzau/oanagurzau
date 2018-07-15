@@ -1,0 +1,22 @@
+//abstracts
+@import "abstracts/variables";
+
+//base
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+
+//layout
+@import "layout/header";
+@import "layout/about-me";
+@import "layout/short-description";
+
+
+//components
+
+@import "components/btn";
+@import "components/line";
+@import "components/curiculum-vitae";
+@import "components/projects";
+
+//pages

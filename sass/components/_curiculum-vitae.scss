@@ -1,0 +1,28 @@
+.curiculum-vitae{
+    padding-top: 3rem;
+    width: 100%;
+    &__content{
+
+        &--img{
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+        };
+
+        &--btn{
+            text-align: center;
+        }
+    }
+}
+
+
+.img-oana-gurzau{
+    box-sizing: content-box;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+    border:7px solid $color-white;
+    display: inline-block;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,0.5);
+
+    }

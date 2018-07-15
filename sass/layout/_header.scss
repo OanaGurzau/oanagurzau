@@ -1,0 +1,109 @@
+.header{
+    height: 100vh;
+    overflow: hidden;
+
+    &__text{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    padding: 0 6rem;
+
+
+    }
+
+
+    &__text-image{
+        width: 100%;
+        padding: 5 15rem;
+    }
+
+    &__subtext{
+        padding: 2rem 0;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.3rem;
+        color: $color-main-grey;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-weight: 100;
+        word-spacing: .5rem;
+    }
+
+    &__scroll-down{
+        width: 100%;
+        text-align: center;
+        font-size: 1.4rem;
+        color: $color-main-grey;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        margin-bottom: 1rem;
+
+    }
+
+
+
+
+
+    &__arrow{
+        position: absolute;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+
+
+    }
+}
+
+  .icon-keyboard_arrow_down{
+    width: 3em;
+    height: 3em;
+    stroke-width: 0;
+    fill: $color-white;
+    display: block;
+    margin: 0 auto;
+
+  }
+
+  .bounce{
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    }
+
+.background-video{
+    position: relative;
+    height: 100%;
+}
+
+.background-video::before{
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    right:0;
+    left:0;
+    background-image: linear-gradient(to right bottom, rgba(18, 3, 57, .8), rgba(61, 18, 85, .8));
+    overflow: hidden;
+
+}
+
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .2;
+    overflow: hidden;
+
+    &__content{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+}

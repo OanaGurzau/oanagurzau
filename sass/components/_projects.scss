@@ -1,0 +1,78 @@
+.container{
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projects{
+    background-color: #eeefe5;
+    padding: 8rem;
+
+    &__title{
+        text-align: center;
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        color: $color-main-red-lighter ;
+        font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+        font-style: italic;
+        padding-bottom: 8rem;
+    }
+
+    &__container{
+        height: 13em;
+        width: 20em;
+        -webkit-transform: perspective(500);
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: .5s;
+        width: 30%;
+
+
+
+        &:hover{
+            -webkit-transform: perspective(500) rotateX(90deg) translateY(-7em) translateZ(6.8em);
+        }
+
+        &:hover --figcaption{
+            box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+        }
+        &:hover --img{
+            box-shadow: none;
+        }
+
+
+        &--img{
+            background-color: #222;
+            box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+            display: block;
+            max-height: 100%;
+            -webkit-transition: .5s;
+            max-width: 100%;
+        }
+        &--figcaption{
+            background-color: #17010B;
+            color: #fff;
+            padding: 1em;
+            -webkit-transform: rotateX(-90deg);
+            -webkit-transform-origin: 100% 0;
+            -webkit-transition: .5s;
+            height: 12em;
+        }
+
+        &--title{
+            text-align: center;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            text-transform: capitalize;
+            font-variant: small-caps;
+            font-size: 4rem;
+        }
+
+        &--description{
+            margin-top: 1em;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+    }
+
+
+}

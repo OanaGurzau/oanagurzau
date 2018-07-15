@@ -1,0 +1,32 @@
+.about-me{
+    width: 100%;
+    padding: 7rem 0 9rem 0;
+    background-color: $color-main-cream;
+
+    &__container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    &__title{
+
+        &--h1{
+            text-align: center;
+            font-size: 3.5rem;
+            color: $color-main-red-lighter;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+        }
+        &--h2{
+            text-align: center;
+            font-size: 2rem;
+            color: $color-dark-grey-3;
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            font-style: italic;
+
+        }
+
+    }
+    &__content{
+        width: 100%;
+    }
+}
