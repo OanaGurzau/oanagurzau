@@ -12,6 +12,20 @@
     transition: all .2s;
     animation: pulsate 1s infinite;
 
+    @media only screen and (max-width: 1000px){
+      padding: .8rem 1rem;
+      font-size: 1em;
+
+   }
+
+   @media only screen and (max-width: 500px){
+     padding: .4rem .6rem;
+     font-size: .7em;
+
+  }
+
+
+
 
     & span{
       margin-left: 3px;

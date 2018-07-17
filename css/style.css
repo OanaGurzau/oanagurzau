@@ -60,6 +60,15 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-weight: 100;
     word-spacing: .5rem; }
+    @media only screen and (max-width: 1000px) {
+      .header__subtext {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 700px) {
+      .header__subtext {
+        font-size: 1.2rem; } }
+    @media only screen and (max-width: 500px) {
+      .header__subtext {
+        font-size: 1rem; } }
   .header__scroll-down {
     width: 100%;
     text-align: center;
@@ -67,6 +76,9 @@ body {
     color: #e8edf3;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-bottom: 1rem; }
+    @media only screen and (max-width: 500px) {
+      .header__scroll-down {
+        font-size: 1rem; } }
   .header__arrow {
     position: absolute;
     bottom: 0%;
@@ -122,6 +134,9 @@ body {
   width: 100%;
   padding: 7rem 0 9rem 0;
   background-color: #eeefe5; }
+  @media only screen and (max-width: 1000px) {
+    .about-me {
+      padding: 4rem 0 6rem 0; } }
   .about-me__container {
     width: 90%;
     margin: 0 auto; }
@@ -130,12 +145,24 @@ body {
     font-size: 3.5rem;
     color: #f36969;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+    @media only screen and (max-width: 1000px) {
+      .about-me__title--h1 {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 500px) {
+      .about-me__title--h1 {
+        font-size: 1.9rem; } }
   .about-me__title--h2 {
     text-align: center;
     font-size: 2rem;
     color: #333;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic; }
+    @media only screen and (max-width: 1000px) {
+      .about-me__title--h2 {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 500px) {
+      .about-me__title--h2 {
+        font-size: 1rem; } }
   .about-me__content {
     width: 100%; }
 
@@ -148,7 +175,7 @@ body {
     @media only screen and (max-width: 1400px) {
       .short-description--column {
         float: none;
-        width: 80%;
+        width: 100%;
         margin: 0 auto; } }
     .short-description--column--h2 {
       text-align: center;
@@ -157,6 +184,9 @@ body {
       color: #333;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       font-style: italic; }
+      @media only screen and (max-width: 1000px) {
+        .short-description--column--h2 {
+          font-size: 2rem; } }
     .short-description--column__left {
       padding: 2rem 8rem;
       text-align: justify; }
@@ -165,6 +195,13 @@ body {
         .short-description--column__left--text span {
           color: #f36969;
           font-weight: bold; }
+        @media only screen and (max-width: 1000px) {
+          .short-description--column__left--text {
+            font-size: 1.2rem; } }
+      @media only screen and (max-width: 600px) {
+        .short-description--column__left {
+          font-size: 1.2rem;
+          padding: 1rem 3rem; } }
     .short-description--column__right {
       overflow: hidden; }
       .short-description--column__right--img {
@@ -190,6 +227,14 @@ body {
   cursor: pointer;
   transition: all .2s;
   animation: pulsate 1s infinite; }
+  @media only screen and (max-width: 1000px) {
+    .btn-cv {
+      padding: .8rem 1rem;
+      font-size: 1em; } }
+  @media only screen and (max-width: 500px) {
+    .btn-cv {
+      padding: .4rem .6rem;
+      font-size: .7em; } }
   .btn-cv span {
     margin-left: 3px;
     transition: margin-left .2s; }
@@ -228,6 +273,14 @@ body {
   border: 7px solid #fff;
   display: inline-block;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5); }
+  @media only screen and (max-width: 1000px) {
+    .img-oana-gurzau {
+      height: 17rem;
+      width: 17rem; } }
+  @media only screen and (max-width: 500px) {
+    .img-oana-gurzau {
+      height: 13rem;
+      width: 13rem; } }
 
 .container {
   margin: 0 auto;
@@ -239,6 +292,9 @@ body {
 .projects {
   background-color: #eeefe5;
   padding: 8rem; }
+  @media only screen and (max-width: 1000px) {
+    .projects {
+      padding: 2rem; } }
   .projects__title {
     text-align: center;
     font-size: 5rem;
@@ -247,6 +303,10 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
     padding-bottom: 8rem; }
+    @media only screen and (max-width: 1000px) {
+      .projects__title {
+        font-size: 2.5rem;
+        padding-bottom: 0; } }
   .projects__container {
     height: 13em;
     width: 20em;
@@ -254,6 +314,20 @@ body {
     -webkit-transform-style: preserve-3d;
     -webkit-transition: .5s;
     width: 30%; }
+    @media only screen and (max-width: 1200px) {
+      .projects__container {
+        width: 45%;
+        margin-bottom: 3rem; } }
+    @media only screen and (max-width: 1000px) {
+      .projects__container {
+        width: 48%;
+        margin-bottom: 0; } }
+    @media only screen and (max-width: 600px) {
+      .projects__container {
+        height: 10em; } }
+    @media only screen and (max-width: 500px) {
+      .projects__container {
+        height: 8em; } }
     .projects__container:hover {
       -webkit-transform: perspective(500) rotateX(90deg) translateY(-7em) translateZ(6.8em); }
     .projects__container:hover --figcaption {
@@ -275,16 +349,29 @@ body {
       -webkit-transform-origin: 100% 0;
       -webkit-transition: .5s;
       height: 12em; }
+      @media only screen and (max-width: 1000px) {
+        .projects__container--figcaption {
+          height: 10em; } }
     .projects__container--title {
       text-align: center;
       font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
       text-transform: capitalize;
       font-variant: small-caps;
       font-size: 4rem; }
+      @media only screen and (max-width: 1000px) {
+        .projects__container--title {
+          font-size: 2rem; } }
+      @media only screen and (max-width: 500px) {
+        .projects__container--title {
+          font-size: 1.5rem; } }
     .projects__container--description {
       margin-top: 1em;
       text-align: center;
       font-size: 1.2rem; }
+      @media only screen and (max-width: 500px) {
+        .projects__container--description {
+          font-size: 1.1rem;
+          margin-top: .5em; } }
 
 .get-in-touch {
   background-color: #4b0f5b;
@@ -293,12 +380,27 @@ body {
   .get-in-touch__container {
     width: 30%;
     margin: 0 auto; }
+    @media only screen and (max-width: 1200px) {
+      .get-in-touch__container {
+        width: 80%; } }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__container {
+        width: 60%; } }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__container {
+        width: 85%; } }
   .get-in-touch__heading--h1 {
     text-align: center;
     font-size: 3.5rem;
     color: #f36969;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     margin-bottom: .5rem; }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__heading--h1 {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__heading--h1 {
+        font-size: 2rem; } }
   .get-in-touch__heading--h2 {
     text-align: center;
     font-size: 2rem;
@@ -306,6 +408,12 @@ body {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
     margin-bottom: 4rem; }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__heading--h2 {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 1000px) {
+      .get-in-touch__heading--h2 {
+        font-size: 1.2rem; } }
 
 .form__input {
   font-size: 1.5rem;
@@ -319,9 +427,16 @@ body {
   width: 100%;
   display: block;
   transition: all .3s; }
+  @media only screen and (max-width: 1000px) {
+    .form__input {
+      padding: 1rem 1rem;
+      font-size: 1rem; } }
   .form__input::-webkit-input-placeholder {
     color: #e8edf3;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+    @media only screen and (max-width: 1000px) {
+      .form__input::-webkit-input-placeholder {
+        font-size: 1rem; } }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -361,6 +476,12 @@ label {
       width: 40%;
       justify-content: space-between;
       align-items: flex-start; }
+      @media only screen and (max-width: 900px) {
+        .footer__container__holder {
+          width: 60%; } }
+      @media only screen and (max-width: 500px) {
+        .footer__container__holder {
+          width: 85%; } }
     .footer__container--item {
       display: inline-block;
       text-align: center; }
@@ -370,15 +491,26 @@ label {
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     font-style: italic;
     font-weight: 600; }
+    @media only screen and (max-width: 1200px) {
+      .footer__icon--text {
+        font-size: 1.8rem; } }
 
 .icon {
   height: 3em;
   width: 3em;
   fill: #e8edf3; }
+  @media only screen and (max-width: 1200px) {
+    .icon {
+      height: 2em;
+      width: 2em; } }
 
 .copyright {
   text-align: center;
   color: #e8edf3;
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.5rem; }
+  @media only screen and (max-width: 1000px) {
+    .copyright {
+      font-size: 1rem; } }
   .copyright:first-of-type {
     margin-top: 5rem; }

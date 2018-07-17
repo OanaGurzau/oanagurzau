@@ -16,6 +16,17 @@
             width: 40%;
             justify-content: space-between;
             align-items: flex-start;
+
+
+            @media only screen and (max-width: 900px){
+                width: 60%;
+            }
+
+            @media only screen and (max-width: 500px){
+                width: 85%;
+            }
+
+
         }
 
         &--item{
@@ -32,6 +43,11 @@
             font-style: italic;
             font-weight: 600;
 
+            @media only screen and (max-width: 1200px){
+                font-size: 1.8rem;
+            }
+
+
         }
     }
     }
@@ -41,13 +57,24 @@
 .icon{
     height: 3em;
     width: 3em;
-    fill: $color-main-grey
+    fill: $color-main-grey;
+
+    @media only screen and (max-width: 1200px){
+        height: 2em;
+        width: 2em;
+    }
+
 }
 
 .copyright{
     text-align: center;
     color: $color-main-grey;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 1.5rem;
+
+    @media only screen and (max-width: 1000px){
+        font-size: 1rem;
+    }
 
 
     &:first-of-type{
