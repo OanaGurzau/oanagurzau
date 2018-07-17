@@ -145,6 +145,11 @@ body {
   .short-description--column {
     float: left;
     width: 50%; }
+    @media only screen and (max-width: 1400px) {
+      .short-description--column {
+        float: none;
+        width: 80%;
+        margin: 0 auto; } }
     .short-description--column--h2 {
       text-align: center;
       font-size: 3rem;
@@ -163,7 +168,11 @@ body {
     .short-description--column__right {
       overflow: hidden; }
       .short-description--column__right--img {
-        width: 100%; }
+        max-width: 100%;
+        float: right; }
+      @media only screen and (max-width: 87.5rem) {
+        .short-description--column__right {
+          display: none; } }
   .short-description::after {
     content: "";
     display: table;
@@ -279,11 +288,10 @@ body {
 
 .get-in-touch {
   background-color: #4b0f5b;
-  height: 50rem;
   padding: 4rem 0;
   width: 100%; }
   .get-in-touch__container {
-    width: 50%;
+    width: 30%;
     margin: 0 auto; }
   .get-in-touch__heading--h1 {
     text-align: center;
@@ -312,19 +320,65 @@ body {
   display: block;
   transition: all .3s; }
   .form__input::-webkit-input-placeholder {
-    color: #999; }
+    color: #e8edf3;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #7ed56f; }
   .form__input:focus:invalid {
     border-bottom: 3px solid #f36969; }
-  .form__input__label {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-left: 2rem;
-    margin-top: .7rem;
-    display: block;
-    transition: all .3s;
+
+.btn-submit {
+  border: none;
+  padding: .8rem;
+  display: block;
+  margin: 3rem auto; }
+
+label {
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  margin-top: .7rem;
+  margin-bottom: .5rem;
+  display: block;
+  transition: all .3s;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  color: #fff; }
+
+.footer {
+  padding: 3rem 0 0 0;
+  background-color: #0A020D; }
+  .footer__container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .footer__container__holder {
+      display: flex;
+      width: 40%;
+      justify-content: space-between;
+      align-items: flex-start; }
+    .footer__container--item {
+      display: inline-block;
+      text-align: center; }
+  .footer__icon--text {
+    color: #e8edf3;
+    font-size: 2.5rem;
     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 600; }
+
+.icon {
+  height: 3em;
+  width: 3em;
+  fill: #e8edf3; }
+
+.copyright {
+  text-align: center;
+  color: #e8edf3;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+  .copyright:first-of-type {
+    margin-top: 5rem; }

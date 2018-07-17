@@ -1,11 +1,10 @@
 .get-in-touch{
     background-color: #4b0f5b;
-    height: 50rem;
     padding: 4rem 0;
     width: 100%;
 
     &__container{
-        width: 50%;
+        width: 30%;
         margin: 0 auto;
     }
 
@@ -49,7 +48,9 @@
         transition: all .3s;
 
         &::-webkit-input-placeholder{
-          color: $color-dark-grey-2;
+          color: $color-main-grey;
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
 
 
         }
@@ -64,18 +65,26 @@
           border-bottom: 3px solid $color-main-red-lighter;
         }
 
-        &__label{
-          font-size: 1.2rem;
-          font-weight: 700;
-          margin-left: 2rem;
-          margin-top: .7rem;
-          display: block;
-          transition: all .3s;
-          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-          font-style: italic;
-
-        }
-
 
     }
+}
+
+.btn-submit{
+  border: none;
+  padding: .8rem;
+  display: block;
+  margin: 3rem auto;
+}
+
+label{
+  font-size: 1.6rem;
+  margin-left: 1rem;
+  margin-top: .7rem;
+  margin-bottom: .5rem;
+  display: block;
+  transition: all .3s;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-style: italic;
+  color: $color-white;
+
 }

@@ -6,6 +6,12 @@
     &--column{
         float:left;
         width: 50%;
+        @media only screen and (max-width: 1400px){
+            float: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+
 
         &--h2{
             text-align: center;
@@ -21,6 +27,7 @@
             padding: 2rem 8rem;
             text-align: justify;
 
+
             &--text{
                 margin-bottom: .8rem;
                 & span{
@@ -28,12 +35,20 @@
                     font-weight: bold;
                 }
             }
+
+
         }
         &__right{
             overflow: hidden;
             &--img{
-                width: 100%;
+                max-width: 100%;
+                float:right;
             }
+
+            @media only screen and (max-width: 87.5rem){
+                display: none;
+            }
+
         }
     }
 
