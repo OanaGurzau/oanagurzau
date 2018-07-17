@@ -207,6 +207,9 @@ body {
       .short-description--column__right--img {
         max-width: 100%;
         float: right; }
+        @media only screen and (max-width: 87.5rem) {
+          .short-description--column__right--img {
+            display: none; } }
       @media only screen and (max-width: 87.5rem) {
         .short-description--column__right {
           display: none; } }

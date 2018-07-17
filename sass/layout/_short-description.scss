@@ -65,7 +65,11 @@
             overflow: hidden;
             &--img{
                 max-width: 100%;
-                float:right;
+                float: right;
+                @media only screen and (max-width: 87.5rem){
+                    display: none;
+                }
+
             }
 
             @media only screen and (max-width: 87.5rem){
