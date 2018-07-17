@@ -42,6 +42,8 @@
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             font-style: italic;
             font-weight: 600;
+            text-decoration: none;
+            display: block;
 
             @media only screen and (max-width: 1200px){
                 font-size: 1.8rem;
@@ -55,9 +57,15 @@
 
 
 .icon{
-    height: 3em;
-    width: 3em;
+    height: 2em;
+    width: 2em;
     fill: $color-main-grey;
+    transform: rotate(10deg);
+
+    &:hover{
+    transform: rotate(-10deg) scale(1.5);
+    transition: .2s;
+    }
 
     @media only screen and (max-width: 1200px){
         height: 2em;

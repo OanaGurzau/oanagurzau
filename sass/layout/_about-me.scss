@@ -21,6 +21,8 @@
             font-size: 3.5rem;
             color: $color-main-red-lighter;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            animation-name: moveInRight;
+            animation-duration: 2s;
 
             @media only screen and (max-width: 1000px){
                 font-size: 2.5rem;
@@ -40,6 +42,11 @@
             color: $color-dark-grey-3;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             font-style: italic;
+            animation-name: moveInLeft;
+            transition: 2s;
+            animation-duration: 2s;
+
+
 
             @media only screen and (max-width: 1000px){
                 font-size: 1.8rem;

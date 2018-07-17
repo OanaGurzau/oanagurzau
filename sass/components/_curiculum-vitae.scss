@@ -24,6 +24,7 @@
     border:7px solid $color-white;
     display: inline-block;
 	box-shadow: 0 1px 6px 0 rgba(0,0,0,0.5);
+    animation: fade-in  1s forwards linear;
 
     @media only screen and (max-width: 1000px){
         height: 17rem;

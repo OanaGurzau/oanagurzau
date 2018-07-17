@@ -22,6 +22,10 @@
         font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
         font-style: italic;
         padding-bottom: 8rem;
+        animation-name: moveInRight;
+        transition: 2s;
+        animation-duration: 2s;
+
 
 
         @media only screen and (max-width: 1000px){

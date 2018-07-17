@@ -15,9 +15,6 @@
             width: 60%;
         }
 
-        @media only screen and (max-width: 1000px){
-            width: 85%;
-        }
 
 
 
@@ -34,6 +31,9 @@
             color: $color-main-red-lighter;
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             margin-bottom: .5rem;
+            animation-name: moveInRight;
+            transition: 2s;
+            animation-duration: 2s;
 
             @media only screen and (max-width: 1000px){
                 font-size: 2.5rem;
@@ -52,6 +52,9 @@
             font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
             font-style: italic;
             margin-bottom: 4rem;
+            animation-name: moveInLeft;
+            transition: 2s;
+            animation-duration: 2s;
 
             @media only screen and (max-width: 1000px){
                 font-size: 1.5rem;
